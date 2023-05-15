@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- Título da aba do navegador -->
+    <title>G&TO - Uma nova Casa de Moda ESG com roupas no estilo Natural Esportivo</title>
+
+    <!-- colocando imagem na aba do navegador -->
+    <link rel="icon" href="./img/LOGO_G&TO_EXP_LOGO_SEM_FRASE.png">
+
+    <!-- colocando descrição no site -->
+    <meta name="description"
+        content="Uma Casa de Moda comprometida com o movimento ESG, focada em roupas no estilo Natural Esportivo para quem busca por roupas confortáveis e despojadas.">
+
+    <!-- link com o CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- IMPORTANDO ÍCONES DO FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/fecc5aa5d1.js" crossorigin="anonymous"></script>
+
+    <!-- mensagem de alerta antes de enviar  -->
+    <script>
+        function mensagem() {
+            alert("Você será redirecionado para seu servidor de email." +
+                "Caso não esteja logado em seu email, efetue o login e tente novamente")
+        }
+
+        function click_menu() {
+            if (itens.style.display == 'block') { itens.style.display = 'none' }
+            else {
+                itens.style.display = 'block'
+            }
+        }
+
+        function tamanho_site() {
+            if (window.innerWidth > 768) { itens.style.display = 'flex' }
+            else {
+                itens.style.display = 'none'
+            }
+        }
+
+    </script>
+</head>
+
+<body onresize="tamanho_site()">
+    <header>
+        <nav class="alinhamento">
+            <a class="link_logo" href="#"><img class="logo" src="./img/LOGO.png"
+                    alt="Um fundo verde mostra o logotipo da Jeito composto de letras no estilo sem serifa, modernas e condensadas. A letra O está sendo substituída pela sombra de um bonsai. Abaixo está escrito Um Novo Jeito De Se Vestir."></a>
+
+            <ul id="itens" class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#quem_somos">Quem Somos?</a></li>
+                <li><a href="#conheca_esg">Conheça a ESG</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <!-- menu de hambúrguer  -->
+            <i id="burguer" class="fa-solid fa-bars" onclick="click_menu()"></i>
+
+        </nav>
+    </header>
+
+    <main>
+        <h1>Página início da Jeito</h1>
+
+        <!-- Quem Somos  -->
+        <section class="quem_somos" id="quem_somos">
+            <!-- <img src="./img/amazonia8 (1).webp" alt=""> -->
+            <div class="parallax">
+                <div class="sobre">
+                    <p class="sobre_titulo">Olá, somos a G&TO!</p>
+                    <p class="sobre_texto">Uma casa de moda comprometida com o movimento ESG, focada em roupas no estilo
+                        Natural Esportivo para quem busca por roupas confortáveis e despojadas!</p>
+                    <button class="btn_esg">
+                        <a href="#conheca_esg">Conheça a ESG</a>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Lançamento  -->
+        <section class="data">
+            <p>Lançamento da <span>g&to</span></p>
+            <time datetime="2023-06-06">06/06/2023</time>
+            <video class="video" controls>
+                <source src="./img/NATURE Fashion Film Festival Milano 2021 (online-video-cutter.com).mp4" type="video/mp4" alt="O vídeo NATURE Fashion Film Festival Milano 2021 mostra imagens da natureza misturadas com pessoas vestindo rouas esvoaçantes">
+            </video>
+        </section>
+
+
+
+        <!-- imagens  -->
+        <!--<section class="imagens">
+            <div class="imgs alinhamento">
+                <img src="./img/03a986846859a105788f994324229855.jpg"
+                    alt="A imagem mostra uma mulher vestindo uma blusa de algodão na cor bege, uma calça de algodão na cor verde e uma sandália marrom feita de couro de pneu reciclado. No ombro, ela leva uma bolsa de tricô nas cores bege e verde. Ela caminha por uma estrada enquanto olha para o lado esquerdo. Sua expressão é animada.">
+                <img src="./img/img_2.png"
+                    alt="A imagem mostra uma mulher vestindo uma camiseta verde escura, calça de linho cinza com um cinto marrom de couro de pneu reciclado e sapatos marrons do mesmo material. Ela está em um estacionamento, segurando uma sacola de papel reciclado e olha para frente usando óculos escuros. Sua expressão é séria.">
+                <img src="./img/img_3_2.0.jpg"
+                    alt="A imagem mostra uma mulher vestindo um macacão esportivo de tecido tipo-seda na cor verde musgo, um tênis branco e segurando uma pequena mochila bege. Ela apoia o queixo na mão enquanto olha para o lado direito. Sua expressão é séria e poderosa.">
+            </div>
+         </section> -->
+
+        <!-- ESG  -->
+        <section class="esg alinhamento" id="conheca_esg">
+            <div class="sobre_esg">
+                <p class="sobre_esg_titulo">O que é ESG?</p>
+                <p class="sobre_esg_texto">ESG é um conjunto de ideias e práticas que avaliam como as empresas cuidam do
+                    meio ambiente, das pessoas que trabalham com elas e de como são administradas. Por exemplo, uma
+                    empresa que usa materiais reciclados e se preocupa em ter um ambiente de trabalho saudável para os
+                    funcionários tem uma boa nota em ESG. Isso é importante porque muitas pessoas estão preocupadas em
+                    apoiar empresas que cuidam do mundo e das pessoas, não só em ganhar dinheiro. </p>
+            </div>
+
+            <!-- <img src="./img/roupas_reciclaveis.jpg" alt="A ilustração mostra um triângulo de reciclagem mas ao invés de setas, contém vestidos nas cores verde e branco. "> -->
+
+            <!-- <ul class="slider">
+                <li>
+                    <input type="radio" id="slide1" name="slide" checked>
+                    <label  for="slide1"></label>
+                    <img src="./img/roupas_reciclaveis.jpg" alt="A ilustração mostra um triângulo de reciclagem mas ao invés de setas, contém vestidos nas cores verde e branco." />
+                </li>
+                <li>
+                    <input type="radio" id="slide2" name="slide">
+                    <label  for="slide2"></label>
+                    <img src="./img/grafico-esg.png" alt="A imagem mostra um gráfico circular explicando os princípios ESG. Governança, Social e Ambiental. Governança mostra os princípios Direitos do Acionista, Gestão de Riscos, Transparencia Fiscal, Anti-Corrupção. Social mostra os princípios Direitos do Trabalhador, Impacto na Comunidade "/>
+                </li>
+                <li>
+                    <input type="radio" id="slide3" name="slide">
+                    <label for="slide3"></label>
+                    <img src="./img/ESG.PNG" alt="A imagem mostra mãos segurando as letras ESG. O fundo está dividido com as cores marrom do lado esquerdo e azul do lado direito e desenhos do planeta Terra e do triângulo de sustentabilidade na cor branca."/>
+                </li>
+             </ul>  -->
+
+            <div class="container">
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="./img/roupas_reciclaveis.jpg"
+                                alt="A ilustração mostra um triângulo de reciclagem mas ao invés de setas, contém vestidos nas cores verde e branco."
+                                style="width:100%;">
+                        </div>
+
+                        <div class="item">
+                            <img src="./img/grafico-esg.png"
+                                alt="A imagem mostra um gráfico circular explicando os princípios ESG. Governança, Social e Ambiental. Governança mostra os princípios Direitos do Acionista, Gestão de Riscos, Transparencia Fiscal, Anti-Corrupção. Social mostra os princípios Direitos do Trabalhador, Impacto na Comunidade "
+                                style="width:65%; margin: auto;">
+                        </div>
+
+                        <div class="item">
+                            <img src="./img/ESG.PNG"
+                                alt="A imagem mostra mãos segurando as letras ESG. O fundo está dividido com as cores marrom do lado esquerdo e azul do lado direito e desenhos do planeta Terra e do triângulo de sustentabilidade na cor branca."
+                                style="width:65%; margin: auto; ">
+                        </div>
+                    </div>
+
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- formulário  -->
+        <section class="formulario">
+            <p class="formulario_titulo">Ficou com alguma dúvida?</p>
+
+            <!-- C(criar) R(listar) U(atualizar) D(excluir)  -->
+            <form method="post" action="mailto:geto@gmail.com" enctype="text/plain">
+
+                <!-- nome  -->
+                <div>
+                    <label for="name">Nome:</label>
+                    <input class="borda" type="text" id="name" name="name">
+                </div>
+
+                <!-- email  -->
+                <div>
+                    <label for="email">E-mail:</label>
+                    <input class="borda" type="email" id="email" name="email">
+                </div>
+
+                <!-- mensagem  -->
+                <div>
+                    <label for="message">Mensagem:</label>
+                    <textarea class="borda" name="message" id="message" cols="40" rows="6"></textarea>
+                </div>
+
+                <button class="btn_forms" type="submit" onclick="mensagem()">Enviar</button>
+            </form>
+
+        </section>
+
+        <!-- contato  -->
+        <section class="contato alinhamento" id="contato">
+            <p class="contato_titulo">Contato</p>
+
+            <div class="conteudo_contato">
+
+                <!-- COLOCANDO MAPA  -->
+                <div class="borda_mapa">
+                    <iframe class="mapa"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.698900349174!2d-46.57329922474684!3d-23.61512917876283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5cec439b9ce3%3A0x92940269447ce633!2sR.%20Niter%C3%B3i%2C%20180%20-%20Centro%2C%20S%C3%A3o%20Caetano%20do%20Sul%20-%20SP%2C%2009510-200!5e0!3m2!1spt-BR!2sbr!4v1683145091954!5m2!1spt-BR!2sbr"
+                        height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+
+                <!-- redes sociais  -->
+                <div class="contato_info">
+                    <div class="info">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>(99)9999-9999</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>contato@geto.com</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Rua Niterói, 180 - SCS</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-instagram"></i>
+                        <p>@geto</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-tiktok"></i>
+                        <p>@geto</p>
+                    </div>
+
+                    <div class="info">
+                        <i class="fa-brands fa-facebook"></i>
+                        <p>@geto</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <!-- &copy:  -->
+        <p>Todos os direitos reservados &#169; G&TO</p>
+    </footer>
+</body>
+
+</html>
