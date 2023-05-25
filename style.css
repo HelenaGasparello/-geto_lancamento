@@ -606,6 +606,10 @@ Grandes telas (tv): acima de 1200px  */
         padding: 50px;
     }
 
+    .carousel_slide {
+       width: 70%;
+    }
+
     .menu {
         display: none;
     }
@@ -616,12 +620,21 @@ Grandes telas (tv): acima de 1200px  */
 
     .video {
         margin-top: 50px;
+        width: 90%;
     }
 
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+
+    .mapa{
+        width: 70%;
+    }
+
+    .borda_mapa{
+        width: 70%;
     }
 }
 
@@ -646,6 +659,7 @@ Grandes telas (tv): acima de 1200px  */
 
     .video {
         margin-top: 50px;
+        width: 90%;
     }
 
     .esg img {
@@ -662,11 +676,11 @@ Grandes telas (tv): acima de 1200px  */
     }
 
     .mapa {
-        width: 400px;
+        width: 70%;
     }
 
     .borda_mapa {
-        width: 480px;
+        width: 70%;
     }
 
     .conteudo_contato {
